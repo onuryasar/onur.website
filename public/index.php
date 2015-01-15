@@ -57,7 +57,7 @@ if($_SERVER['SERVER_NAME']!="onur.website"){
 		<div id="logo" class="intro">
 			<h1><a>onur yaşar</a></h1>
 			<div style="text-align:right; margin-top:40px;">
-				<p class="onur"><img src="img/onur.jpg"></p>
+				<p class="onur"><img src="/img/onur.jpg"></p>
 				<h2 class="twitter"><a href="http://twitter.com/onuryasar" target="_blank">twitter</a></h2>
 				<h2 class="twitter"><a href="http://twitter.com/onuryasar_en" target="_blank">twitter (english)</a></h2>
 				<h2 class="linkedin"><a href="http://www.linkedin.com/profile/view?id=15245820" target="_blank">linked in</a></h2>
