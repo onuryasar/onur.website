@@ -1,6 +1,6 @@
 # Keep these files out of the repo
-blog/**
-blog-en/**
+/public/blog/*
+/public/blog-en/*
 
 # Hidden files
 *.DS_Store
