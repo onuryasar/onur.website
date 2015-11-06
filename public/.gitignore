@@ -1,0 +1,9 @@
+# Keep these files out of the repo
+blog/**
+blog-en/**
+
+# Hidden files
+*.DS_Store
+*Thumbs.db
+*.sass-cache*
+*~imageoptim*
