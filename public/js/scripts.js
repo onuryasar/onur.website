@@ -14,6 +14,18 @@ $(document).ready(function(){
     	$('body').addClass('pointer');
     }
 
+	// Feature Selector
+
+	$('.selector-tabs li').click(function(){
+		$(this).parent('.selector-tabs').children('li').removeClass('active');
+		$(this).addClass('active');
+
+		var activeTab = $(this).index() + 1;
+
+		$(this).closest('.feature-selector').find('.selector-content').children('li').removeClass('active');
+		$(this).closest('.feature-selector').find('.selector-content').children('li:nth-child('+activeTab+')').addClass('active');
+	});
+
 	// Slider Initializations
 
 	$('.hero-slider').flexslider({});
