@@ -1,6 +1,7 @@
 # Keep these files out of the repo
 /public/blog/*
 /public/blog-en/*
+/public/cv.pdf
 
 # Hidden files
 *.DS_Store
