@@ -3920,7 +3920,8 @@ footer.short-2 .contact-action:hover {
 }
 @media all and (max-width: 767px) {
   .centered-logo .logo {
-    top: 20px;
+  	max-width: 200px;
+    top: 10px;
     max-height: 40px;
     margin-top: 0px;
   }
