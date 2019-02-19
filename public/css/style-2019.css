@@ -7,25 +7,13 @@ html, body {
 
 body {
     margin: 0%;
-    padding: 12px 24px;
-}
-
-.wrapper {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 24px;
 }
 
 .container {
     width: 480px;
-    padding: 1rem 5px;
+    padding: 12px 0;
+    margin: 10% auto;
     text-align: left;
     border-top: 1px solid darkgreen;
     border-bottom: 1px solid darkgreen;
@@ -74,11 +62,17 @@ ul.ways-to-contact li span.description {
     margin-bottom: 1em;
 }
 
-@media only screen and (min-width: 720px) {    
+@media only screen and (min-width: 720px) {
     ul.ways-to-contact li span.description {
         display: none;
     }
     ul.ways-to-contact li:hover span.description {
         display: inline;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 100%;
     }
 }
