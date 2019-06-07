@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #333333;
 }
@@ -11,55 +11,60 @@ body {
 }
 
 .container {
-    width: 480px;
-    padding: 12px 0;
-    margin: 10% auto;
+    width: 520px;
+    padding: 0;
+    margin: 0 auto;
     text-align: left;
-    border-top: 1px solid darkgreen;
-    border-bottom: 1px solid darkgreen;
 }
 
 .container p, .container li {
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 h1 {
     margin: 0%;
     padding: 0%;
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 800;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 26px;
 }
 
 a {
     text-decoration: none;
     color: #000000;
+    font-weight: 600;
 }
 
 a:hover {
-    color: darkgreen;
+    color: #000000;
     text-decoration: underline;
 }
 
 ul.ways-to-contact {
-    margin: 0% 0% 0% 12px;
+    margin: 0%;
     padding: 0%;
 }
 
 ul.ways-to-contact li {
     list-style: none;
+    margin-bottom: 1em;
 }
 
 ul.ways-to-contact li::before {
-    content: '\203A ';
+    content: '\00B7';
 }
 
 ul.ways-to-contact li span.description {
     display: block;
-    margin-bottom: 1em;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (min-width: 720px) {
