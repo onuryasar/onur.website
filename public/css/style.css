@@ -8,6 +8,13 @@ html, body {
 body {
     margin: 0%;
     padding: 24px;
+    margin-top: 2.5rem;
+    transition: 1s all;
+}
+
+body.dark-mode {
+    background: #333;
+    color: #FEFEFE;
 }
 
 .container {
@@ -39,13 +46,21 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #111111;
     font-weight: 600;
 }
 
 a:hover {
-    color: #000000;
+    color: #333333;
     text-decoration: underline;
+}
+
+.dark-mode a {
+    color: #FEFEFE;
+}
+
+.dark-mode a:hover {
+    color: #DFDFDF;
 }
 
 ul.ways-to-contact {
@@ -65,6 +80,10 @@ ul.ways-to-contact li::before {
 ul.ways-to-contact li span.description {
     display: block;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode ul.ways-to-contact li span.description {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (min-width: 720px) {

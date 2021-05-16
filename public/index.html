@@ -10,7 +10,7 @@
     name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800&display=swap" rel="stylesheet">
-  <link href="css/style-2019.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57053142-1"></script>
   <script>
@@ -36,8 +36,8 @@
           business enquiries.</span>
       </li>
       <li>
-        <a href="https://www.last.fm/user/onuryasar"
-            target="_blank">Last.fm</a> <span class="description">Music I've been listening to.</span>
+        <a href="https://www.last.fm/user/onuryasar" target="_blank">Last.fm</a> <span class="description">Music I've
+          been listening to.</span>
       </li>
       <li>
         <a href="https://trakt.tv/users/onuryasar/history/" target="_blank">Trakt.tv</a> <span
@@ -49,6 +49,24 @@
       </li>
     </ul>
   </div>
-</body>
+  <script>
+    // Set the dark mode before 7 and after 18
+    function checkForDarkMode() {
+      const now = new Date();
+      const hour = now.getHours();
+      if (hour < 7 || hour > 18) {
+        document.body.classList.add('dark-mode');
+        return;
+      }
+      document.body.classList.remove('dark-mode');
+    }
 
+    checkForDarkMode();
+
+    // Check for time every 10 seconds
+    setInterval(() => {
+      checkForDarkMode();
+    }, 10000);
+  </script>
+</body>
 </html>
